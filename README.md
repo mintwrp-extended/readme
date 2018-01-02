@@ -43,3 +43,10 @@ repo sync -j8 --force-sync -c -f --no-clone-bundle --no-tags
 lunch omni_<device>-userdebug
 ALLOW_MISSING_DEPENDENCIES=true mka -j8 recoveryimage
 ```
+
+### Stuff you get by using Minimal TWRP Extended
+
+ - Capability of building kernel using Clang
+ - Updated Lineage build additions
+ - Shortened build fingerprint length
+ - FBE support (install_keyring patch)

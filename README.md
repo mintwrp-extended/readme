@@ -19,6 +19,9 @@ repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_
   <remove-project name="android_build" path="build/make" />
   <project name="android_build_make" path="build/make" remote="mintwrpext" />
 
+  <remove-project name="android_bootable_recovery" path="bootable/recovery" />
+  <project name="android_bootable_recovery" path="bootable/recovery" remote="mintwrpext" />
+
   <remove-project name="android_system_core" path="system/core" />
   <project name="android_system_core" path="system/core" remote="mintwrpext" />
 

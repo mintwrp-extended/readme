@@ -53,3 +53,6 @@ ALLOW_MISSING_DEPENDENCIES=true mka -j8 recoveryimage
  - Updated Lineage build additions
  - Shortened build fingerprint length
  - FBE support (install_keyring patch)
+ - Keymaster V1 support (experimental)
+ - New stuff from Omnirom gerrit
+ - Miscellaneous fixes

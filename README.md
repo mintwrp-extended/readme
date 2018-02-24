@@ -22,6 +22,12 @@ repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_
   <remove-project name="android_bootable_recovery" path="bootable/recovery" />
   <project name="android_bootable_recovery" path="bootable/recovery" remote="mintwrpext" />
 
+  <remove-project path="TeamWin/.repo/frameworks/base" name="android_frameworks_base" />
+  <project path="TeamWin/.repo/frameworks/base" name="halogenOS/android_frameworks_base" remote="github" revision="XOS-8.1" clone-depth="1">
+    <linkfile src="core/java/android/content" dest="frameworks/base/core/java/android/content" />
+    <linkfile src="core/java/android/security" dest="frameworks/base/core/java/android/security" />
+  </project>
+
   <remove-project name="android_system_core" path="system/core" />
   <project name="android_system_core" path="system/core" remote="mintwrpext" />
 
